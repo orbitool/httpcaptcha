@@ -16,11 +16,11 @@ func useDefaults(cfg *Config) *Config {
 	}
 
 	if cfg.IdHeader == "" {
-		cfg.IdHeader = "X-HttpCaptcha"
+		cfg.IdHeader = "X-Captcha"
 	}
 
 	if cfg.SolutionHeader == "" {
-		cfg.SolutionHeader = "X-HttpCaptcha-Solution"
+		cfg.SolutionHeader = "X-Captcha-Solution"
 	}
 
 	if cfg.IdQuery == "" {
