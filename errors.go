@@ -10,5 +10,5 @@ func errMissingHeader(w http.ResponseWriter, header string) {
 }
 
 func errInvalidCaptcha(w http.ResponseWriter) {
-	http.Error(w, "invalid httpcaptcha solution", http.StatusBadRequest)
+	http.Error(w, "invalid captcha solution", 498)
 }
