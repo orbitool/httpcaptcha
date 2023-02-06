@@ -51,7 +51,7 @@ func (c *HttpCaptcha) Middleware(next http.Handler) http.Handler {
 		}
 
 		if !captcha.VerifyString(id, solution) {
-			errInvalidCaptcha(w)
+			errInvalidCaptcha(w, c.Config.InvalidCaptchaCode)
 			return
 		}
 

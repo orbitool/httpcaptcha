@@ -3,11 +3,12 @@ package httpcaptcha
 import "github.com/dchest/captcha"
 
 type Config struct {
-	IdHeader       string
-	SolutionHeader string
-	IdQuery        string
-	ImageHeight    int
-	ImageWidth     int
+	IdHeader           string
+	SolutionHeader     string
+	IdQuery            string
+	ImageHeight        int
+	ImageWidth         int
+	InvalidCaptchaCode int
 }
 
 func useDefaults(cfg *Config) *Config {
