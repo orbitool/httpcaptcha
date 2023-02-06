@@ -36,5 +36,9 @@ func useDefaults(cfg *Config) *Config {
 		cfg.ImageWidth = captcha.StdWidth
 	}
 
+	if cfg.InvalidCaptchaCode == 0 {
+		cfg.InvalidCaptchaCode = 498
+	}
+
 	return cfg
 }
